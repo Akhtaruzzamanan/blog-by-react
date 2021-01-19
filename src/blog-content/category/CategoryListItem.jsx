@@ -5,9 +5,9 @@ function CategoryListItem(props) {
     return (
         <>
 
-            <ListItem data-aos = "fade-left" className = "mx-auto">
+            <ListItem data-aos = "fade-up" className = "mx-auto">
                 <a href="#">{props.typeOfCategory}</a>
-                <span>{props.numberOfCategory}</span>
+                <span className = "">{props.numberOfCategory}</span>
             </ListItem>
 
         </>

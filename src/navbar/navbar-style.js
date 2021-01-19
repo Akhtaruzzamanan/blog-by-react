@@ -1,11 +1,11 @@
 import styled from 'styled-components'
-import {Navbar, NavbarToggler } from 'reactstrap'
+import {Navbar } from 'reactstrap'
 
 const CustomNavbar = styled(Navbar)`
     position: fixed;
     width: 100%;
     z-index: 999;
-    padding: ${props => props.scrolled ? '0' : '10px 0'}; // when page scrolled, navbar padding on 15px
+    padding: ${props => props.scrolled ? '5px 0' : '15px 0'}; // when page scrolled, navbar padding on 5px
     background-color: ${props => props.scrolled ? '#535c68' : 'none'}; // when page scrolled, navbar background-color is crimson
     transition: all 0.3s ease;
     opacity: 0.8;
@@ -35,13 +35,4 @@ const NavMenu = styled.span`
     &:hover {color: ${props => props.scrolled ? 'aqua' : 'greenyellow'}}; // when page scrolled, navbar text-color is aqua
 `;
 
-// Navbar Toggler Design
-
-const CustomToggler = styled(NavbarToggler)`
-    font-size: 1.2rem;
-    padding: 2px 5px;
-    color: "#ffffff";
-    background: #ffffff;
-`;
-
-export {CustomNavbar, Logo, NavMenu, CustomToggler}
+export {CustomNavbar, Logo, NavMenu}

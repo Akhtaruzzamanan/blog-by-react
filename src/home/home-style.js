@@ -12,6 +12,7 @@ const HomeSection = styled.section`
 
 const HomeContent = styled.div`
     padding-top: 12rem;
+    text-align: center;
 `;
 
 const HeadingThree = styled.h3`

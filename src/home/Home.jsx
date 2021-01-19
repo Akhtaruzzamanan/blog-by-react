@@ -5,7 +5,7 @@ function Home() {
     return (
         <HomeSection>
             <div className="container-fluid px-4">
-                <HomeContent className = "text-center ">
+                <HomeContent className = "">
                     <HeadingThree>Tours & Travels</HeadingThree>
                     <HeadingOne>Amazing Place on Earth</HeadingOne>
                     <HomeBtn>

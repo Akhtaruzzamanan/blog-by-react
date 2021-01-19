@@ -56,14 +56,13 @@ const FollowLink = styled.a`
 const BackTopBtn = styled(BackTop)`
     span{
         background: linear-gradient(to top, #fee140 0%, #fa709a 100%);
-        padding: 15px;
+        padding: 13px;
         border-radius: 5px;
         color: #3f4954;
         text-align: center;
         font-size: 1rem;
 
         &:hover {
-            // background: linear-gradient(to top, #8fd3f4 0%, #84fab0 100%);
             color: #000000;
             background: linear-gradient(to top, #fa709a 0%, #fee140 100%);
         }
@@ -108,21 +107,21 @@ function Footer() {
                             <HeadingTwo>Follow us</HeadingTwo>
                             <Para>Let us be Social</Para>
                             <div>
-                                <FollowLink href="#"><i class="fab fa-facebook-f"></i></FollowLink>
-                                <FollowLink href="#"><i class="fab fa-twitter"></i></FollowLink>
-                                <FollowLink href="#"><i class="fab fa-instagram"></i></FollowLink>
-                                <FollowLink href="#"><i class="fab fa-youtube"></i></FollowLink>
+                                <FollowLink href="#"><i className="fab fa-facebook-f"></i></FollowLink>
+                                <FollowLink href="#"><i className="fab fa-twitter"></i></FollowLink>
+                                <FollowLink href="#"><i className="fab fa-instagram"></i></FollowLink>
+                                <FollowLink href="#"><i className="fab fa-youtube"></i></FollowLink>
 
                             </div>
                         </div>
                     </div>
                     
-                    <div className="col-md-12 text-center text-light">
-                        <h5>Design & Develop by MD Akhtaruzzaman</h5>
+                    <div className="col-md-12 text-center mt-3">
+                        <h5 className = "text-light">Design & Develop by MD Akhtaruzzaman</h5>
                     </div>
 
                     <BackTopBtn>
-                        <span><i class="fas fa-arrow-up"></i></span>
+                        <span><i className="fas fa-arrow-up"></i></span>
                     </BackTopBtn>
 
                 </div>

@@ -25,10 +25,9 @@ function CarouselPart() {
                 <div className = "row py-5">
                     <div style = {{      
                         position: "relative",
-                        height: "70vh",
-                        width: "100%",
+                        height: "57vh",
                         display: "flex",
-                    }} className = 'col-md-6 col-sm-12' data-aos = "zoom-in-right">
+                    }} className = 'col-md-6 col-sm-12' data-aos = "flip-left" data-aos-duration="1500">
                         <ReactCardCarousel autoplay={true} autoplay_speed={2000}>
                             <CarouselCard heading3 = "London Fashion week's continued the evolution" btntext = "Fashion" timeinit = "3 minutes" /> 
                             <CarouselCard heading3 = "London Fashion week's continued the evolution" btntext = "Fashion" timeinit = "3 minutes" /> 
@@ -38,10 +37,9 @@ function CarouselPart() {
 
                     <div style = {{      
                         position: "relative",
-                        height: "70vh",
-                        width: "100%",
+                        height: "57vh",
                         display: "flex",
-                    }} className = 'col-md-6 col-sm-12' data-aos = "zoom-in-left">
+                    }} className = 'col-md-6 col-sm-12' data-aos = "flip-right" data-aos-duration="1500">
                         <ReactCardCarousel autoplay={true} autoplay_speed={2000}>
                             <CarouselCard heading3 = "London Fashion week's continued the evolution" btntext = "Fashion" timeinit = "3 minutes" /> 
                             <CarouselCard heading3 = "London Fashion week's continued the evolution" btntext = "Fashion" timeinit = "3 minutes" /> 

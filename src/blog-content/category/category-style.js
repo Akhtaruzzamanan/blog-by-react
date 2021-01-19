@@ -12,7 +12,9 @@ const ListItem = styled.li`
     padding: .4rem 1rem;
     margin: .8rem 0;
     border-radius: 3rem;
-    width: 55%;
+    list-style: none;
+    width: 70%;
+
     display: flex;
     justify-content: space-between;
 
@@ -20,6 +22,7 @@ const ListItem = styled.li`
         color: #000000;
         text-decoration: none;
     }
+
 `;
 
 export {CategoryList, ListItem};

@@ -36,13 +36,13 @@ function BlogContent() {
 
                         <div className="py-5 text-center">
                             <Pagination data-aos="zoom-in" >
-                                <a href="#"><i class="fas fa-chevron-left"></i></a>
-                                <a href="#"><i class="fas fa-angle-double-left"></i></a>
+                                <a href="#"><i className="fas fa-chevron-left"></i></a>
+                                <a href="#"><i className="fas fa-angle-double-left"></i></a>
                                 <a href="#" >1</a>
                                 <a href="#" >2</a>
                                 <a href="#" >3</a>
-                                <a href="#"><i class="fas fa-angle-double-right"></i></a>
-                                <a href="#"><i class="fas fa-chevron-right"></i></a>
+                                <a href="#"><i className="fas fa-angle-double-right"></i></a>
+                                <a href="#"><i className="fas fa-chevron-right"></i></a>
                             </Pagination>
                         </div>
 

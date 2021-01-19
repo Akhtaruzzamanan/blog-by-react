@@ -14,8 +14,8 @@ function BlogPost(props) {
                 
             </div>
             <PostInfo className = "mx-auto">
-                <Span><i class="fas fa-user text-gray"/>&nbsp;&nbsp;Admin</Span>
-                <Span><i class="fas fa-calendar-alt text-gray"/>&nbsp;&nbsp; {props.dateOfPost} </Span>
+                <Span><i className="fas fa-user text-gray"/>&nbsp;&nbsp;Admin</Span>
+                <Span><i className="fas fa-calendar-alt text-gray"/>&nbsp;&nbsp; {props.dateOfPost} </Span>
                 <Span> {props.comment} </Span>
             </PostInfo>
 
@@ -27,7 +27,7 @@ function BlogPost(props) {
                 nobis, voluptate, numquam architecto fugit. Eligendi quidem ipsam ducimus minus magni
                 illum similique veniam tempore unde?
                 </Para>
-                <Button >Read More &nbsp; <i class="fas fa-arrow-right"/></Button>
+                <Button >Read More &nbsp; <i className="fas fa-arrow-right"/></Button>
             </PostTitle>
 
         </PostContent>

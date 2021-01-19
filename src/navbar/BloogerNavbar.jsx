@@ -3,6 +3,7 @@ import React, {useState, useEffect} from 'react';
 // ReactStrap desing Navbar
 import {
     Collapse,
+    NavbarToggler,
     Nav,
     NavItem,
     NavbarBrand,
@@ -10,7 +11,7 @@ import {
 } from 'reactstrap';
   
 // Navbar Custom Style  
-import {CustomNavbar, Logo, NavMenu, CustomToggler} from './navbar-style';
+import {CustomNavbar, Logo, NavMenu} from './navbar-style';
 
 function BloogerNavbar (props){
 
@@ -25,7 +26,7 @@ function BloogerNavbar (props){
   
       const [scrolled, setScrolled] = useState(false);
   
-      const handleScroll = () => {
+        const handleScroll = () => {
           const offset = window.scrollY;
           if (offset > 75) {
               setScrolled(true);
@@ -33,11 +34,11 @@ function BloogerNavbar (props){
           else {
               setScrolled(false)
           }
-      }
+        }
   
-      useEffect(() => {
-          window.addEventListener('scroll', handleScroll)
-      })
+        useEffect(() => {
+            window.addEventListener('scroll', handleScroll)
+        })
   
     // navbar sticky logic end
   
@@ -47,9 +48,9 @@ function BloogerNavbar (props){
         <CustomNavbar expand="md" scrolled = {scrolled} >
             <div className = "container-fluid px-4">
                 <NavbarBrand scrolled = {scrolled} to="/" className = "navbar-brand"><Logo scrolled = {scrolled} >Blooger</Logo></NavbarBrand>
-                <CustomToggler onClick={toggle}>
+                <NavbarToggler onClick={toggle} style = {{fontSize: "1.2rem", color: "#ffffff"}}>
                     <i className = {click ? "fas fa-times" : "fas fa-bars"}/>
-                </CustomToggler>
+                </NavbarToggler>
                 <Collapse isOpen={click} navbar >
                     <Nav className="mx-auto nav-menu text-capitalize" navbar>
                         <NavItem>
